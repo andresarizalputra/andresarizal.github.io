@@ -1,0 +1,180 @@
+/* ADGRID - Grid for Responsive Web */
+/* Developer: Andre Sarizal Putra   */
+/* Site: http://andredezain.com     */ 
+
+.adcontainer {
+	max-width: 1200px;
+	margin: 0 auto;
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.adgrid {
+	width: 100%;
+	padding:8px;
+}
+
+.adcol {
+	margin:8px;
+	float: left;
+	width: calc(100% - 16px);
+}
+@media screen and (min-width: 550px) and (max-width: 749px) {
+.xs1.adcol {
+	width: calc(8.333333333333333% - 16px);
+}
+.xs2.adcol {
+	width: calc(16.666666666666667% - 16px);
+}
+.xs3.adcol {
+	width: calc(25% - 16px);
+}
+.xs4.adcol {
+	width: calc(33.333333333333333% - 16px);
+}
+.xs5.adcol {
+	width: calc(41.666666666666667% - 16px);
+}
+.xs6.adcol {
+	width: calc(50% - 16px);
+}
+.xs7.adcol {
+	width: calc(58.333333333333333% - 16px);
+}
+.xs8.adcol {
+	width: calc(66.666666666666667% - 16px);
+}
+.xs9.adcol {
+	width: calc(75% - 16px);
+}
+.xs10.adcol {
+	width: calc(83.333333333333333% - 16px);
+}
+.xs11.adcol {
+	width: calc(91.666666666666667% - 16px);
+}
+.xs12.adcol {
+	width: calc(100% - 16px);
+}
+}
+
+
+@media screen and (min-width: 750px) and (max-width: 999px) {
+.sm1.adcol {
+	width: calc(8.333333333333333% - 16px);
+}
+.sm2.adcol {
+	width: calc(16.666666666666667% - 16px);
+}
+.sm3.adcol {
+	width: calc(25% - 16px);
+}
+.sm4.adcol {
+	width: calc(33.333333333333333% - 16px);
+}
+.sm5.adcol {
+	width: calc(41.666666666666667% - 16px);
+}
+.sm6.adcol {
+	width: calc(50% - 16px);
+}
+.sm7.adcol {
+	width: calc(58.333333333333333% - 16px);
+}
+.sm8.adcol {
+	width: calc(66.666666666666667% - 16px);
+}
+.sm9.adcol {
+	width: calc(75% - 16px);
+}
+.sm10.adcol {
+	width: calc(83.333333333333333% - 16px);
+}
+.sm11.adcol {
+	width: calc(91.666666666666667% - 16px);
+}
+.sm12.adcol {
+	width: calc(100% - 16px);
+}
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1199px) {
+.md1.adcol {
+	width: calc(8.333333333333333% - 16px);
+}
+.md2.adcol {
+	width: calc(16.666666666666667% - 16px);
+}
+.md3.adcol {
+	width: calc(25% - 16px);
+}
+.md4.adcol {
+	width: calc(33.333333333333333% - 16px);
+}
+.md5.adcol {
+	width: calc(41.666666666666667% - 16px);
+}
+.md6.adcol {
+	width: calc(50% - 16px);
+}
+.md7.adcol {
+	width: calc(58.333333333333333% - 16px);
+}
+.md8.adcol {
+	width: calc(66.666666666666667% - 16px);
+}
+.md9.adcol {
+	width: calc(75% - 16px);
+}
+.md10.adcol {
+	width: calc(83.333333333333333% - 16px);
+}
+.md11.adcol {
+	width: calc(91.666666666666667% - 16px);
+}
+.md12.adcol {
+	width: calc(100% - 16px);
+}
+}
+
+
+@media screen and (min-width: 1200px) {
+.lg1.adcol {
+	width: calc(8.333333333333333% - 16px);
+}
+.lg2.adcol {
+	width: calc(16.666666666666667% - 16px);
+}
+.lg3.adcol {
+	width: calc(25% - 16px);
+}
+.lg4.adcol {
+	width: calc(33.333333333333333% - 16px);
+}
+.lg5.adcol {
+	width: calc(41.666666666666667% - 16px);
+}
+.lg6.adcol {
+	width: calc(50% - 16px);
+}
+.lg7.adcol {
+	width: calc(58.333333333333333% - 16px);
+}
+.lg8.adcol {
+	width: calc(66.666666666666667% - 16px);
+}
+.lg9.adcol {
+	width: calc(75% - 16px);
+}
+.lg10.adcol {
+	width: calc(83.333333333333333% - 16px);
+}
+.lg11.adcol {
+	width: calc(91.666666666666667% - 16px);
+}
+.lg12.adcol {
+	width: calc(100% - 16px);
+}
+}
+
+

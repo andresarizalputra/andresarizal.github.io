@@ -1,0 +1,349 @@
+@font-face {
+  font-family: 'textnormal';
+  src: url('../fonts/lato.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*--------------------------------------------*/
+/*----------------- Nav Menu -----------------*/
+/*--------------------------------------------*/
+
+#cssmenu {
+  font-family: "textnormal";
+  font-size: 90%;
+  font-weight: normal;
+  line-height: 15px;
+  text-align: right;
+}
+#cssmenu > ul {
+  width: auto;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  background: #ffffff;
+  border: 0;
+}
+#cssmenu > ul li#responsive-tab {
+  display: none;
+  /* Hide for large screens */
+
+}
+#cssmenu > ul li {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  margin-bottom: 0.25em;
+  margin-top: 0.25em;
+}
+#cssmenu > ul li a {
+  display: block;
+  padding: 12px 18px 11px 18px;
+  text-decoration: none;
+  color: #747474;
+  transition: all 0.3s ease-out;
+}
+#cssmenu > ul li a.active,
+#cssmenu > ul li a:hover {
+  color: #00baef;
+}
+
+
+@media (max-width: 549px) {
+  #cssmenu {
+    text-align: center;
+    margin: 0.5rem 0;
+  }
+  #cssmenu > ul {
+    width: 100%;
+    border: 1px 0 solid #ece6e8;
+  }
+  #cssmenu > ul li#responsive-tab {
+    display: block;
+  }
+  #cssmenu > ul li#responsive-tab a {
+    background: url('../img/menu.png') no-repeat;
+    background-position: 95% -35%;
+    text-align: left;
+    transition: all 0.3s ease-out;
+  }
+  #cssmenu > ul li#responsive-tab a:hover {
+    color: #00baef;
+    background-position: 95% 135%;
+  }
+  #cssmenu > ul li {
+    display: none;
+    margin:0;
+  }
+  #cssmenu > ul li.active {
+    border-top: 1px solid #ece6e8;
+    border-bottom: 1px solid #ece6e8;
+  }
+  #cssmenu > ul li.has-sub {
+    border-bottom: 1px solid #ece6e8;
+  }
+}
+
+
+/* Make sure they show even if hidden in mobile view by JS */
+@media (min-width: 550px) {
+  #cssmenu > ul > li.collapsed {
+    display: inline-block !important;
+    *display: inline;
+    zoom: 1;
+  }
+  #cssmenu > ul ul li.collapsed {
+    display: block !important;
+  }
+}
+
+/*--------------------------------------------*/
+/*-------------- Introductions ---------------*/
+/*--------------------------------------------*/
+
+.intros {
+	background-image: url("../img/covers.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-attachment: fixed;
+	text-transform: uppercase;
+	text-align: center;
+	padding: 10rem 0;
+	font-family: "textnormal";
+
+}
+.intros h2, .intros h6 {
+	letter-spacing: normal;
+	font-weight: normal;
+	padding:0;
+	margin: 0;
+	color:#fff;
+}
+.intros h2 {
+	font-size: 280%;
+}
+.intros h6 {
+	font-size: 100%;
+}
+
+/*--------------------------------------------*/
+/*---------------- Icon Hover ----------------*/
+/*--------------------------------------------*/
+
+.hi-icon-wrap {
+	text-align: center;
+	margin: 0 auto;
+	padding: 1em 0 0;
+}
+
+.hi-icon {
+	display: inline-block;
+	font-size: 0px;
+	cursor: pointer;
+	margin: 15px 8px;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	text-align: center;
+	position: relative;
+	z-index: 1;
+	color: #fff;
+}
+
+.hi-icon:after {
+	pointer-events: none;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	content: '';
+	-webkit-box-sizing: content-box; 
+	-moz-box-sizing: content-box; 
+	box-sizing: content-box;
+}
+
+.hi-icon:before {
+	font-family: 'FontAwesome';
+	speak: none;
+	font-size: 30px;
+	line-height: 60px;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	display: block;
+	-webkit-font-smoothing: antialiased;
+}
+
+/* Effect 5 */
+.hi-icon-effect-5 .hi-icon {
+	box-shadow: 0 0 0 2px rgba(255,255,255,1);
+	overflow: hidden;
+	text-decoration: none;
+	-webkit-transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+	-moz-transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+	transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+.hi-icon-effect-5 .hi-icon:after {
+	display: none;
+}
+
+.hi-icon-effect-5 .hi-icon:hover {
+	background: rgba(255,255,255,1);
+	color: #00baef;
+	box-shadow: 0 0 0 8px rgba(255,255,255,0.3);
+}
+
+.hi-icon-effect-5a .hi-icon:hover:before {
+	-webkit-animation: toRightFromLeft 0.3s forwards;
+	-moz-animation: toRightFromLeft 0.3s forwards;
+	animation: toRightFromLeft 0.3s forwards;
+}
+
+@-webkit-keyframes toRightFromLeft {
+	49% {
+		-webkit-transform: translate(100%);
+	}
+	50% {
+		opacity: 0;
+		-webkit-transform: translate(-100%);
+	}
+	51% {
+		opacity: 1;
+	}
+}
+@-moz-keyframes toRightFromLeft {
+	49% {
+		-moz-transform: translate(100%);
+	}
+	50% {
+		opacity: 0;
+		-moz-transform: translate(-100%);
+	}
+	51% {
+		opacity: 1;
+	}
+}
+@keyframes toRightFromLeft {
+	49% {
+		transform: translate(100%);
+	}
+	50% {
+		opacity: 0;
+		transform: translate(-100%);
+	}
+	51% {
+		opacity: 1;
+	}
+}
+
+.intros button.ui.inverted.blue.basic {
+	margin-top: 1rem;
+	transition: all 0.5s ease-out;
+}
+
+/*--------------------------------------------*/
+/*------------------ Works -------------------*/
+/*--------------------------------------------*/
+.works {
+	background-color: #fff;
+	padding: 5rem 0;
+}
+.works h1,h2,h3,h4,h5 {
+	color: #404040;
+}
+.works h3 {
+	color: #fff;
+	padding:18px 8px 0 0;
+	margin: 0 0 0 20px;
+}
+.works span {
+	display: block;
+	font-size: 85%;
+
+}
+.works button.ui.inverted.button {
+	margin: 12px 0 12px 20px;
+	transition: all 0.3s ease-out;
+}
+.h-works {
+	text-align: center;
+	margin: 0 0 3rem 0;
+}
+
+/*--------------------------------------------*/
+/*---------------- work List -----------------*/
+/*--------------------------------------------*/
+.tab-works {
+	overflow: auto;
+}
+.workzxliz {
+	padding-top: 1rem;
+}
+.workbox {
+	padding-top:8rem;
+	margin: 0;
+}
+
+/*---------grid---------*/
+.grid {
+  background: #DDD;
+}
+
+.grid:after {
+  display: block;
+  clear: both;
+}
+
+.grid-sizer,
+.grid-item {
+  width: calc(33.333333333333333% - 16px);
+  margin: 8px;
+}
+
+.grid-item {
+  float: left;
+}
+
+.grid-item img {
+  display: block;
+  max-width: 100%;
+}
+.gridbox {
+	width: 100%;
+	background-color: #202020;
+	padding:0 0 16px 0;
+}
+@media (min-width: 551px) and (max-width: 900px) {
+	.grid-sizer,
+	.grid-item {
+	  width: calc(50% - 16px);
+	}
+}
+
+@media (max-width: 550px) {
+	.grid-sizer,
+	.grid-item {
+	  width: calc(100% - 16px);
+	}
+}
+.spaze {
+	margin: 10px;
+}
+/*--------------------------------------------*/
+/*----------------- Contact ------------------*/
+/*--------------------------------------------*/
+.contacts {
+	background-color: #202020;
+	padding: 0 0 1.5rem 0;
+}
+.copyrights {
+	padding-top: 1.5rem;
+	border-top: 1px solid #303030;
+	color: #404040;
+	text-align: center;
+	font-size: 90%;
+	text-shadow: -1px 1px 0 rgba(0,0,0,0.4);
+}
