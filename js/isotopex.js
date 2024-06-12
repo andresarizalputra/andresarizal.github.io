@@ -23,5 +23,5 @@ $('.special.cards .image').dimmer({
 });
 
 $('#showprofils').click(function(){
-  $('.ui.modal').modal('show');
+  $('#tampilprofils').modal('show');
 });
