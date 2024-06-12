@@ -22,6 +22,14 @@ $('.special.cards .image').dimmer({
   on: 'hover'
 });
 
-$('#showprofils').click(function(){
-  $('#tampilprofils').modal('show');
+$('#klik_apps_1').click(function(){
+  $('#show_apps_1').modal('show');
 });
+
+$('#klik_analyst_1').click(function(){
+  $('#show_analyst_1').modal('show');
+});
+
+$('.ui.accordion')
+  .accordion()
+;
