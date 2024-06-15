@@ -51,6 +51,15 @@ html {
   color: #00baef;
 }
 
+#cssmenu.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+}
+
 
 @media (max-width: 549px) {
   #cssmenu {
@@ -84,6 +93,9 @@ html {
   }
   #cssmenu > ul li.has-sub {
     border-bottom: 1px solid #ece6e8;
+  }
+  #cssmenu.fixed {
+	margin-top: 0;
   }
 }
 
